@@ -35,16 +35,43 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: CHARUMATHI R
+RegisterNumber: 212222240021*/
+```C
+module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule
 
 
-**RTL realization**
+```
+## Logic symbol & Truthtable:
 
-**Output:**
+![316395754-a9ccb75e-db7b-490e-8b69-10f820e6bff4](https://github.com/charumathiramesh/BOOLEAN_FUNCTION_MINIMIZATION/assets/120204455/f3691506-b604-440a-af68-e3a55153e21c)
 
-**RTL**
+![316395946-6835b6c0-9fe5-4f55-8288-53b7d0c42104](https://github.com/charumathiramesh/BOOLEAN_FUNCTION_MINIMIZATION/assets/120204455/cc3c34aa-3d11-422a-8fa3-534d8b3d1879)
 
-**Timing Diagram**
+## RTL realization:
+
+![316396172-5ffd7097-c99c-4ef3-a82d-0108e72a8b9e](https://github.com/charumathiramesh/BOOLEAN_FUNCTION_MINIMIZATION/assets/120204455/c3f560b4-b097-45e7-909f-c31268ca0f94)
+
+
+## Output:
+
+![316396315-3294f442-723b-4550-ab9c-49ed60325deb](https://github.com/charumathiramesh/BOOLEAN_FUNCTION_MINIMIZATION/assets/120204455/6c38023c-66bb-44d8-8103-04e7f9d986fc)
 
 **Result:**
 
